@@ -1,0 +1,118 @@
+*,*::before, *::after{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body { 
+    box-sizing: border-box;
+    background-color: #eaeaea;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 7rem;
+    /* width: 40rem; */
+}
+.header-text-small{
+    font-size: 1.8rem;
+    color: #555;
+    font-weight: 400;
+}
+.header-text-large{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #222;
+}
+.header-paragraph{
+    font-size: 1.4rem;
+    margin-top: 0.7rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.card{
+    height: 20rem;
+    background-color: #fafafa;
+    margin: 2rem 0rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.3rem 1.5rem  rgba(43, 187, 168, 0.219);
+}
+.card-body h2{
+    font-size: 1.8rem;
+}
+.card-body p {
+    margin-top: 0.5rem;
+    color: #777;
+}
+.card-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 80%;
+}
+
+.cyan{
+    border-top: 0.4rem solid rgb(43, 187, 168);
+    border-radius: 0.4rem;
+}
+.red{
+    border-top: 0.4rem solid rgb(187, 43, 43);
+    border-radius: 0.4rem;
+}
+.blue{
+    border-top: 0.4rem solid rgb(43, 89, 187);
+    border-radius: 0.4rem;
+}
+.orange{
+    border-top: 0.4rem solid rgb(187, 137, 43);
+    border-radius: 0.4rem;
+}
+
+img{
+    width: 5.5rem;
+}
+
+@media (min-width: 1024px){
+    header{
+        margin-bottom: 7rem;
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 0rem 2rem;
+        width: 30rem;
+    }
+    .mt{
+        margin-top: 2rem;
+    }
+    .header-text-small{
+        font-size: 2.6rem;
+    }
+    .header-text-large{
+        font-size: 2.6rem;
+    }
+    .header-paragraph{
+        font-size: 1.4rem;
+    }
+    .card-body h2{
+        font-size: 2rem;
+    }
+    .card-body p {
+        font-size: 1.4rem;
+    }
+}
